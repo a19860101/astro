@@ -1,6 +1,4 @@
 ---
 title = 'test'
 ---
-
-# post 3
-hello
+# hello
