@@ -1,5 +1,5 @@
 ---
-title = 'test'
+title : 'test 1'
 ---
 # 標題一
 

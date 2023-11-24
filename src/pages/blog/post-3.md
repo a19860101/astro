@@ -1,5 +1,5 @@
 ---
-title = 'test'
+title : 'test 3'
 ---
 
 # post 3

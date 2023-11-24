@@ -20,6 +20,6 @@ const posts = await Astro.glob('./blog/*.md')
 		<a href="/blog/post-2">post 2</a>
 		<a href="/blog/post-3">post 3</a>
 	</nav>
-	{posts.map(post=>post)}
+	{posts.map(post=><div><a href={post.url}>{post.frontmatter.title}</a></div>)}
 </body>
 </html>
