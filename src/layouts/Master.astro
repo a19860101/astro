@@ -1,6 +1,7 @@
 ---
 import Nav from '../components/Nav.astro'
 import Header from '../components/Header.astro'
+import {ViewTransitions} from 'astro:transitions'
 const {pageTitle} = Astro.props
 ---
 <!DOCTYPE html>
@@ -8,7 +9,8 @@ const {pageTitle} = Astro.props
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zac Site  {pageTitle}</title>
+    <title>Zac Site  {pageTitle && '- '+pageTitle}</title>
+    <ViewTransitions />
 </head>
 <body>
     <Nav logo="連成電腦" />
