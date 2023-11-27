@@ -1,18 +1,11 @@
 ---
 import Nav from '../components/Nav.astro'
+import Master from '../layouts/Master.astro'
 
 const posts = await Astro.glob('./blog/*.md') 
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Astro</h1>
+<Master>
+	<h1 class="text-3xl font-bold text-rose-600">Astro</h1>
 	<Nav />
 	<nav>
 		<a href="/portfolio/folio-1">作品集一</a>
@@ -21,5 +14,4 @@ const posts = await Astro.glob('./blog/*.md')
 		<a href="/blog/post-3">post 3</a>
 	</nav>
 	{posts.map(post=><div><a href={post.url}>{post.frontmatter.title}</a></div>)}
-</body>
-</html>
+</Master>
