@@ -1,4 +1,5 @@
 ---
+layout: '../../layouts/MDLayout.astro'
 title: 'test 2'
 description: 'desc'
 author: 'Zac'

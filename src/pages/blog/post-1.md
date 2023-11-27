@@ -1,4 +1,5 @@
 ---
+layout: '../../layouts/MDLayout.astro'
 title : 'test 1'
 ---
 # 標題一
