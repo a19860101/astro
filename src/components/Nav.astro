@@ -1,8 +1,11 @@
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">link</a>
-    <a href="#">link</a>
-    <a href="#">link</a>
-    <a href="#">link</a>
+---
+const {logo} = Astro.props
+---
+<nav class="w-full py-5 bg-zinc-800 flex px-4">
+    <a class="text-zinc-100" href="#">{logo}</a>
+    <div class="ml-auto space-x-4">
+        <a class="text-zinc-100" href="/">Home</a>
+        <a class="text-zinc-100" href="/about">About</a>
+        <a class="text-zinc-100" href="/blog/post-1">Blog</a>
+    </div>
 </nav>
