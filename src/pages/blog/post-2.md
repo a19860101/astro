@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/MDLayout.astro'
-title: 'test 2'
+title: '測試文章'
 description: 'desc'
 author: 'Zac'
 pubDate: '20231124'

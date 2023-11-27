@@ -1,17 +1,18 @@
 ---
 import Nav from '../components/Nav.astro'
 import Header from '../components/Header.astro'
+const {pageTitle} = Astro.props
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zac Site</title>
+    <title>Zac Site  {pageTitle}</title>
 </head>
 <body>
     <Nav logo="連成電腦" />
-    <Header myTitle="asdfasdfs" />
+    <Header myTitle="Im Zac" />
     <slot />
 </body>
 </html>

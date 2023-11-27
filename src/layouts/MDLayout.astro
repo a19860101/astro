@@ -1,6 +1,9 @@
 ---
 import Master from '../layouts/Master.astro'
+const {frontmatter} = Astro.props
 ---
-<Master>
+<Master pageTitle={frontmatter.title}>
+   <h2>{frontmatter.title}</h2>
+   <div>發布日期{frontmatter.pubDate}</div>
    <slot /> 
 </Master>
